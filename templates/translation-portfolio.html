@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post_title }}</title>
+    {% include '_header.html' %}
+    <meta charset="UTF-8">
+</head>
+<body>
+    
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% include '_navbar.html' %}
+        <div class="language-toolbar">
+            {% if language == "English" %}
+                <a href="/translation-fr">Français</a>
+            {% else %}
+                <a href="/translation">English</a>
+            {% endif %}
+        </div>
+        <div class="pixel-portrait-container">
+            <img src="../static/images/portrait-8bit.png" alt="" class="pixel-portrait"/>
+        </div>
+        
+        <md-block id="portfolios">
+            
+            {{ portfolio_content | safe }}
+        </md-block>
+        {% include '_footer.html' %}
+    </div>
+
+</body>
+</html>

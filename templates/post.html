@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post_title }}</title>
+    {% include '_header.html' %}
+    <link href="../static/css/prism.css" rel="stylesheet" />
+    <script src="../static/js/prism.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="sticky-bar"></div>
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% include '_navbar.html' %}
+        <div class="post-toolbar">
+            {% if logged_in %}
+                <div class="post-tool-buttons">
+                    <a href="{{ url_for('edit_post', slug=post_title|urlencode) }}" class="edit">
+                        <span class="post-toolbar__link">Edit</span>
+                    </a>
+                    <a href="{{ url_for('delete_post', slug=post_title|urlencode) }}" class="delete">
+                        <span class="post-toolbar__link">Delete</span>
+                    </a>
+                    <a href="{{ url_for('blog') }}" class="back">
+                        <span class="post-toolbar__link">Back</span>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+        <md-block>
+            {{ post_content | safe }}
+        </md-block>
+        {% include '_footer.html' %}
+    </div>
+    <div class="reading-time">
+        <span id="time"></span> min read
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+            var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+            var scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
+            var stickyBar = document.querySelector('.sticky-bar');
+    
+            if (scrollPercentage >= 100) {
+                stickyBar.classList.add('expanded');
+            } else {
+                stickyBar.classList.remove('expanded');
+                stickyBar.style.width = scrollPercentage + '%';
+            }
+        });
+
+        function readingTime() {
+            const text = document.querySelector(".post-content").innerText;
+            const wpm = 225;
+            const words = text.trim().split(/\s+/).length;
+            const time = Math.ceil(words / wpm);
+            document.getElementById("time").innerText = time;
+        }
+        readingTime();
+    </script>
+
+</body>
+</html>

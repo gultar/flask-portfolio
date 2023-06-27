@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post_title }}</title>
+    {% include '_header.html' %}
+</head>
+<body>
+
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% include '_navbar.html' %}
+        <div class="post-edit-toolbar">
+            <a href="#" class="edit" onclick="saveArticle('{{ post_title }}', simplemde.value())">
+                <span class="post-toolbar__link">
+                    Save
+                </span>
+            </a>
+            <a href="{{ url_for('post', slug=post_title) }}" class="">
+                <span class="post-toolbar__link">
+                    Return
+                </span>
+            </a>
+        </div>
+        <div id="save-success-message" style="display: none;">Saved successfully</div>
+        <textarea name="post-edit" id="post-edit" cols="30" rows="10">
+            {{ post_content | safe }}
+        </textarea>
+        
+    </div>
+
+    <script>
+        var simplemde = new SimpleMDE({ element: document.getElementById("post-edit") });
+
+        function saveArticle(slug, content) {
+
+            const url = `/admin/edit/${slug}`;
+            const data = {
+                content: content,
+            };
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById("save-success-message").style.display = "block";
+                    console.log('Article saved successfully.');
+                } else {
+                    console.log('Failed to save the article.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

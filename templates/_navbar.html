@@ -1,0 +1,31 @@
+<h1 class="my-name">
+    <!-- <div class="pixel-portrait-container">
+        <img src="../static/images/8bitpix (1).png" alt="" class="pixel-portrait"/>
+    </div>
+     -->
+     {% if (request.url_rule.endpoint == 'index') %}
+     <span class="wrapping-name typed"># <a class="name" href="/">Sacha-Olivier Dulac</a> #</span>
+     {% else %}
+     <span class="wrapping-name"># <a class="name" href="/">Sacha-Olivier Dulac</a> #</span>
+     {% endif %}
+    <!-- <div class="pixel-portrait-container">
+        <img src="../static/images/8bitpix (1).png" alt="" class="pixel-portrait"/>
+    </div> -->
+</h1>
+
+<nav class="navbar">
+    <a class="nav-element{% if current_page == '/' %} active{% endif %}" href="/">
+        <span>{% if current_page == '/' %}{{ '#' }}{% endif %}Coding{% if current_page == '/' %}{{ '#' }}{% endif %}</span>
+    </a>
+    <a class="nav-element{% if current_page == '/translation' %} active{% endif %}" href="/translation">
+        <span>{% if current_page == '/translation' %}{{ '#' }}{% endif %}Translation{% if current_page == '/translation' %}{{ '#' }}{% endif %}</span>
+    </a>
+    <a class="nav-element{% if current_page == '/blog' %} active{% endif %}" href="/blog">
+        <span>{% if current_page == '/blog' %}{{ '#' }}{% endif %}Blog{% if current_page == '/blog' %}{{ '#' }}{% endif %}</span>
+    </a>
+    {% if navbar_logged_in %}
+        <a class="nav-element" href="/logout"><span>Logout</span></a>
+    {% else %}
+        <a class="nav-element" href="/login"><span>Login</span></a>
+    {% endif %}
+</nav>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Post Titles</title>
+    {% include '_header.html' %}
+</head>
+<body>
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% include '_navbar.html' %}
+    </div>
+    <div class="post-content centered-container">
+        <div class="centered-box">
+            <h1>All Post Titles</h1>
+            <a href="/blog"><span>«- Go back</span></a>
+            <ul>
+                {% for index in range(post_titles|length) %}
+                    <li>
+                        <a href="{{ url_for('post', slug=post_filenames[index]) }}" class="post-link">
+                            {{ post_titles[index] }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post_title }}</title>
+    {% include '_header.html' %}
+</head>
+<body>
+
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% include '_navbar.html' %}
+        <div class="post-edit-toolbar">
+            <a href="#" class="edit" onclick="saveArticle(simplemde.value())">
+                <span class="post-toolbar__link">
+                    Save
+                </span>
+            </a>
+            <a href="{{ url_for('blog') }}" class="">
+                <span class="post-toolbar__link">
+                    Return
+                </span>
+            </a>
+        </div>
+        <div id="save-success-message" style="display: none;">Saved successfully</div>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" value="" maxlength="30"><br><br>
+
+        <textarea name="post-edit" id="post-edit" cols="30" rows="10"></textarea>
+        
+    </div>
+
+    <script>
+        var simplemde = new SimpleMDE({ element: document.getElementById("post-edit") });
+
+        function saveArticle(content) {
+            const titleInput = document.getElementById("title")
+            const title = titleInput.value
+            const url = `/admin/edit/new`;
+            const data = {
+                content: content,
+                title: title
+            };
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById("save-success-message").style.display = "block";
+                    console.log('Article saved successfully.');
+                } else {
+                    console.log('Failed to save the article.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

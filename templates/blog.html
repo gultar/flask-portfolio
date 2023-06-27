@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markdown Blog</title>
+    {% include '_header.html' %}
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% include '_navbar.html' %}
+        <div class="blog-navbar">
+            <span class="blog-navbar-element"><a class="" href="/publications">List of Posts</a></span>
+            
+            {% if logged_in %}
+                <span class="blog-navbar-element"><a class="" href="/admin/edit/new">New Post</a></span>
+            {% endif %}
+
+            <div class="blog-navbar-element search-container">
+            
+                <form action="{{ url_for('search') }}" method="get" class="search-form nav-element">
+                    <input type="text" name="keyword" placeholder="Enter keyword..." class="search-input">
+                    <button type="submit" class="search-button"></button>
+                </form>
+                <div class="search-toggle blog-navbar-element">
+                    <a href="#" class="nav-element"><span class="">Search</span></a>
+                    <!-- <i class="fas fa-search"></i> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="column-container">
+
+            
+            <div class="post-column">
+                
+                {% for content in post_contents %}
+                    <p>
+                        <md-block class="post-column-article">
+                            {{ content | safe }}
+                        </md-block>
+                    </p>
+                {% endfor %}
+                
+                <div class="pagination">
+                    {% if total_pages > 1 %}
+                        {% if current_page > 1 %}
+                            <a href="{{ url_for('blog', page=current_page-1) }}">Previous</a>
+                        {% endif %}
+                        {% for page in range(1, total_pages + 1) %}
+                            {% if current_page == page %}
+                                <a href="{{ url_for('blog', page=page) }}" class="active">{{ page }}</a>
+                            {% else %}
+                                <a href="{{ url_for('blog', page=page) }}">{{ page }}</a>
+                            {% endif %}
+                        {% endfor %}
+                        {% if current_page < total_pages %}
+                            <a href="{{ url_for('blog', page=current_page+1) }}">Next</a>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% include '_footer.html' %}
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const searchToggle = document.querySelector(".search-toggle");
+        const searchForm = document.querySelector(".search-form");
+
+        searchToggle.addEventListener("click", function () {
+            searchForm.classList.toggle("active");
+            searchToggle.style.display = "none"
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!searchToggle.contains(event.target) && !searchForm.contains(event.target)) {
+            searchForm.classList.remove("active");
+            searchToggle.style.display = "flex"
+            }
+        });
+        });
+
+        
+    </script>
+</body>
+</html>

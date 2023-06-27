@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    {% include '_header.html' %}
+</head>
+<body>
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% include '_navbar.html' %}
+        <div class="centered-container">
+            <div class="centered-box">
+                <h1>Login</h1>
+                <a href="/"><span>«- Go back</span></a>
+                <form method="POST" action="{{ url_for('login') }}" class="login-form">
+                    <div class="username-container login-element">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="password-container login-element">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="login-submit-container login-element">
+                        <input class="login-button" type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

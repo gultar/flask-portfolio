@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    {% include '_header.html' %}
+</head>
+<body>
+    
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% include '_navbar.html' %}
+        <h1>Search Results for "{{ keyword }}"</h1>
+
+        {% if posts %}
+            <ul>
+                {% for post in posts %}
+                    <li><a href="{{ url_for('post', slug=post) }}">{{ post }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No results found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
