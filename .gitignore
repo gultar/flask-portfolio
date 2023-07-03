@@ -2,3 +2,6 @@
 flask_session
 flask_session/*
 *.pyc
+csr.pem
+key.pem
+cert.pem
