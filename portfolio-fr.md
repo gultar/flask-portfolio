@@ -31,7 +31,7 @@ Je code depuis une décennie maintenant et je ne m'en lasse pas! J'ai expérimen
 | Deno     | Electron     | React     |
 | Docker   | Solidity     | Wordpress |
 | Gulp     | PHP          | MySQL     |
-| Sass     | DigitalOcean |
+| Sass     | DigitalOcean | Pinecone  |
 | GPT-3.5  | Hugging Face | LangChain |
 
 

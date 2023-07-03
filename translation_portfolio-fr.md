@@ -7,43 +7,31 @@
 - Courriel : [sacha-olivier.dulac@hotmail.com](mailto:sacha-olivier.dulac@hotmail.com)
 
 ## Profil
-
 J’ai une affinité naturelle avec les langues et j’adore approfondir le sens des expressions en français et en anglais. La traduction, à mes yeux, relève davantage de la passion que du labeur et c’est la raison pour laquelle j’en ai fait mon métier.
 
-## Compétences
+## Services
+Besoin de traduire un document pour votre réunion d'affaires? 📄
+Accroître votre visibilité en traduisant votre site web en français est une priorité pour vous, mais vous ne savez pas par où commencer? 🌐
+Peut-être souhaitez-vous rendre votre contenu marketing accessible aux clients francophones? 💼
+**Bonne nouvelle!** C'est précisément ce que je fais! ✨
 
-### Traduction
+**Services offerts** 💼
+- Traduction générale
+- Relecture EN/FR
+- Rédaction de contenu
+- Création de sites web
 
-- Je traduis des textes de nature administrative, économique et promotionnelle. J’ai également acquis une expertise en traduction de fils Twitter et Facebook.
+**IT & Tech** 💻
+- Documentation
+- Manuels d'utilisation
+- Localisation de sites web
+- Descriptions de produits
 
-### Localisation Web
-
-- L’art de combiner l’utile à l’agréable. Le code ne me fait pas peur, et traduire un site Web est pour moi un jeu d’enfant.
-
-### Développement Web
-
-- À mes yeux, le code c’est de l’art! Je peux aisément passer plusieurs nuits blanches à résoudre des bogues simplement pour avoir la satisfaction de voir mon projet fonctionner!
-
-## Traduction
-
-- Administration
-- Contenu Web
-- Économie
-- Finance
-- Communiqués de presse
-- Fils Twitter / Facebook
-
-## Web
-
-| Web        |                   |                  |
-|------------|-------------------|------------------|
-| HTML5      | CSS3              | Javascript       |
-| Express    | Socket.io         | jQuery           |
-| React      | Next.js           | IPFS             |
-| Web3       | OpenZeppelin      | Node.js          |
-| Deno.js    | Solidity          | Truffle          |
-| Python    | OpenAI          | LangChain          |
-| MySQL    | MongoDB          | PineCone          |
+**Affaires** 📊
+- Rapports d'affaires
+- Contenu marketing
+- Présentations visuelles
+- Contenu des médias sociaux
 
 ## Langues
 

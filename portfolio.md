@@ -32,7 +32,7 @@ I've been coding for a decade now, and I can't get enough! I've dabbled with var
 | Deno     | Electron     | React     |
 | Docker   | Solidity     | Wordpress |
 | Gulp     | PHP          | MySQL     |
-| Sass     | DigitalOcean |
+| Sass     | DigitalOcean | Pinecone  |
 | GPT-3.5  | Hugging Face | LangChain |
 
 

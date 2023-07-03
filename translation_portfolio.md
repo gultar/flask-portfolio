@@ -9,31 +9,29 @@
 ## Profile
 I have a natural affinity for languages, and I truly love to deepen my understanding of expressions in both French and English. More than just a job, translation is a labour of love for me, and that’s why I chose to pursue a career in this field.
 
-## Skills
-- Translation: I translate administrative, economical and promotional content. I’ve also gained expertise in translating Twitter and Facebook publications.
-- Web Localization: Mastering the art of combining business and pleasure. I’m completely at ease working in code, and translating a website is a piece of cake.
-- Web Development: For me, code is art and I can spend many a sleepless night fixing bugs just so I can have the satisfaction of seeing my project work.
+## Services
+Need to translate a document for your business meeting? 📄
+Increasing your visibility by having your website translated in French is a priority to you but you just don't know where to start? 🌐
+Perhaps you want to make your marketing content available to French-speaking customers? 💼
+**Good News!** That's precisely what I do! ✨
 
-## Translation
-- Administrative
-- Web Content
-- Economy
-- Finance
-- Press release
-- Tweets & Facebook posts
+**Services offered** 💼
+- General Translation
+- EN/FR Proofreading
+- Content Writing
+- Website Building
 
-## Web
+**IT & Tech** 💻
+- Documentation
+- End User Manuals
+- Website Localization
+- Product Descriptions
 
-
-| Web        |                   |                  |
-|------------|-------------------|------------------|
-| HTML5      | CSS3              | Javascript       |
-| Express    | Socket.io         | jQuery           |
-| React      | Next.js           | IPFS             |
-| Web3       | OpenZeppelin      | Node.js          |
-| Deno.js    | Solidity          | Truffle          |
-| Python    | OpenAI          | LangChain          |
-| MySQL    | MongoDB          | PineCone          |
+**Business** 📊
+- Business Reports
+- Marketing Content
+- Visual Presentations
+- Social Media Content
 
 ## Languages
 - French - Native
