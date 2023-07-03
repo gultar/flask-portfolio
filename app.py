@@ -4,11 +4,12 @@ from flask_session import Session
 from modules.file_utils import *
 import secrets
 from dotenv import dotenv_values, load_dotenv  
+import os
 
 load_dotenv()
 env = dotenv_values(".env")
 
-app = Flask(__name__, template_folder='./templates',static_folder=env["STATIC_PATH"])
+app = Flask(__name__, template_folder='./templates',static_folder=os.path.abspath("./static"))
 app.config['SESSION_TYPE'] = 'filesystem'
 app.secret_key = secrets.token_hex(16)
 Session(app)
