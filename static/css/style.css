@@ -206,21 +206,31 @@ h2, h3{
     font-size: large;
 }
 
+.search-container{
+    display: flex;
+    /* outline:solid green; */
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* Search Form */
 .search-form {
-    display: none;
-    animation: slide-in 0.1s ease;
     color: var(--highlight-1);
+    display: flex;
+    /* outline:solid blue; */
+    height: 25px;
+    vertical-align: middle;
+    
 }
 
 .search-input {
-    display: flex;
     background-color: var(--base01);
     border: none;
-    height: 25px;
+    color:var(--highlight-1);
     padding: 0px 5px;
     border-radius: 5px;
     border: dashed var(--base02);
+    
 }
 
 .search-input::placeholder {
@@ -229,16 +239,11 @@ h2, h3{
 
 .search-button {
     display: flex;
-    border-radius: 0;
     border: none;
     background-color: transparent;
     color: var(--highlight-1);
-    font-size: 24px;
 }
 
-.search-form.active {
-    display: flex;
-}
 
 /* Sticky Bar */
 .sticky-bar {
@@ -521,9 +526,28 @@ footer {
         width: 100%;
     }
 
+    .search-container{
+        display:flex;
+        height: 100%;
+        flex-direction: column;
+        
+    }
+
+    .blog-navbar-element{
+        /* outline:solid green; */
+
+    }
+
+    .search-form{
+        height: 65%;
+    }
+
     .search-input {
-        display: inline-block;
         width: 100%;
+    }
+
+    .search-button{
+        /* outline:solid green; */
     }
 
     .nav-element {
@@ -640,8 +664,6 @@ footer {
 
 @media only screen and (min-width: 200px) and (max-width: 769px) {
 
-
-    
     .nav-element {
         margin: 10px 0;
         font-size: 18pt;
