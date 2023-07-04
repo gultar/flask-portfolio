@@ -9,6 +9,7 @@
     --highlight-1: #FFB600;
     --highlight-2: #41D446;
     --highlight-3: #9370DB;
+    --size-of-portrait-square:110px;
 }
 
 
@@ -124,10 +125,27 @@ h2, h3{
     justify-content: center;
 }
 
-.pixel-portrait {
-    height: 80px;
-    width: 80px;
+.portrait-image-holder{
+    display: block;
+    height: var(--size-of-portrait-square);
+    width: var(--size-of-portrait-square);
+    background-color: #0d1012;
     border-radius: 50%;
+    border: 1px solid var(--highlight-1);
+}
+
+.pixel-portrait {
+    display: block;
+    height: var(--size-of-portrait-square);
+    width: var(--size-of-portrait-square);
+    border-radius: 50%;
+    background-image: url("../images/portrait-8bit.png");
+    transition: background-image .5s;
+    background-size: contain;
+}
+
+.pixel-portrait:hover{
+    background-image: url("../images/portrait.jpg");
 }
 
 /* Navbar */
@@ -474,7 +492,7 @@ footer {
 @media only screen and (max-width: 1200px) {
 
     body{
-        font-size:larger;
+        font-size:large;
     }
     .navbar {
         justify-content: space-between;
@@ -540,9 +558,8 @@ footer {
         padding: 4px 0px;
     }
 
-    .pixel-portrait{
-        width:120px;
-        height:120px;
+    :root{
+        --size-of-portrait-square:120px;
     }
 
     footer{
@@ -604,6 +621,10 @@ footer {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 769px) {
+
+    body{
+        /* font-size: small; */
+    }
     
     .nav-element {
         margin: 10px 0;

@@ -1,6 +1,7 @@
 from modules.dependencies import *
 from modules.file_utils import *
 from modules.decorators import *
+import os
 
 def create_routes(app):
         
@@ -24,7 +25,13 @@ def create_routes(app):
             username = request.form.get('username')
             password = request.form.get('password')
 
-            print(env)
+            
+            if "ADMIN_USER" not in env:
+                env["ADMIN_USER"] = os.environ.get("ADMIN_USER")
+
+            if "ADMIN_PASSWORD" not in env:
+                env["ADMIN_PASSWORD"] = os.environ.get("ADMIN_PASSWORD")
+
             if username == env["ADMIN_USER"] and password == env["ADMIN_PASSWORD"]:
                 session['logged_in'] = True
                 session['username'] = username
