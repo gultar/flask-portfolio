@@ -9,6 +9,10 @@ import os
 load_dotenv()
 env = dotenv_values(".env")
 
+if len(env) == 0:
+    env["ADMIN_USER"] = os.environ.get("ADMIN_USER")
+    env["ADMIN_PASSWORD"] = os.environ.get("ADMIN_PASSWORD")
+
 app = Flask(__name__, template_folder='./templates',static_folder=os.path.abspath("./static"))
 app.config['SESSION_TYPE'] = 'filesystem'
 app.secret_key = secrets.token_hex(16)
