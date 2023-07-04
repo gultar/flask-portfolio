@@ -9,8 +9,10 @@ import os
 load_dotenv()
 env = dotenv_values(".env")
 
-if len(env) == 0:
+if "ADMIN_USER" not in env:
     env["ADMIN_USER"] = os.environ.get("ADMIN_USER")
+
+if "ADMIN_PASSWORD" not in env:
     env["ADMIN_PASSWORD"] = os.environ.get("ADMIN_PASSWORD")
 
 app = Flask(__name__, template_folder='./templates',static_folder=os.path.abspath("./static"))
