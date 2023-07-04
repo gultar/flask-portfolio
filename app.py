@@ -21,6 +21,8 @@ Session(app)
 
 if __name__ == '__main__':
     create_routes(app)
+    print('ENVNN',os.environ.get("ADMIN_USER"))
+    print('ENVNN',os.environ.get("ADMIN_PASSWORD"))
     app.jinja_env.auto_reload = True
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.run(host="0.0.0.0", port='5000')
