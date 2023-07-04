@@ -6,6 +6,7 @@
     --base03: #C6E3ED;
     --base04: #F3FAFF;
     --nav-footer-border: #234659;
+    --delete-button:#dc1701;
     --highlight-1: #FFB600;
     --highlight-2: #41D446;
     --highlight-3: #9370DB;
@@ -46,6 +47,8 @@
     --base00:white;
     --base04:black;
 }
+
+
 
 
 /* Body */
@@ -140,7 +143,7 @@ h2, h3{
     width: var(--size-of-portrait-square);
     border-radius: 50%;
     background-image: url("../images/portrait-8bit.png");
-    transition: background-image .5s;
+    transition: background-image .2s;
     background-size: contain;
 }
 
@@ -191,6 +194,7 @@ h2, h3{
     justify-content: center;
     font-size: 18px;
     width: 100%;
+    margin-top:0;
 }
 
 
@@ -366,10 +370,10 @@ a:hover{
 
 /* Delete Button */
 .delete-button {
-    background-color: var(--base03);
+    background-color: var(--delete-button);
     border: none;
     padding: 10px 20px;
-    color: var(--base03);
+    color: var(--base00);
     outline: none;
     font-size: large;
     border-radius: 5px;
@@ -491,9 +495,6 @@ footer {
 /* Media Queries */
 @media only screen and (max-width: 1200px) {
 
-    body{
-        font-size:large;
-    }
     .navbar {
         justify-content: space-between;
         padding-bottom:30px;
@@ -508,7 +509,7 @@ footer {
     }
 
     td{
-        font-size:larger;
+        font-size:18pt;
     }
 
     .name{
@@ -532,18 +533,22 @@ footer {
 
     .post-content {
         padding: 0 120px;
-        font-size: 12pt;
+        
+    }
+
+    .post-content p, .post-content li{
+        font-size: 8pt;
     }
 
     #portfolios h1{
-        font-size:26pt;
+        font-size:28pt;
     }
 
     #portfolios h2, #portfolios h3{
         display: flex;
         width: 100%;
         justify-content: center;
-        font-size: 22pt;
+        font-size: 26pt;
         text-align: center;
     }
 
@@ -580,12 +585,22 @@ footer {
         font-size: 12pt;
         width: 100%;
     }
+
+    .blog-navbar-element{
+        font-size: 25pt;
+    }
 }
 
 
 
 @media only screen and (min-width: 769px) and (max-width: 1200px)  {
-    
+    body{
+        font-size:9pt;
+    }
+
+    h2, h3{
+        font-size:11pt;
+    }
 
     .nav-element {
         margin: 10px;
@@ -609,6 +624,9 @@ footer {
         font-size: 10pt;
     }
 
+    .post-toolbar__link{
+        font-size:20pt;
+    }
 
     #portfolios h1{
         font-size:30pt;
@@ -622,9 +640,7 @@ footer {
 
 @media only screen and (min-width: 200px) and (max-width: 769px) {
 
-    body{
-        /* font-size: small; */
-    }
+
     
     .nav-element {
         margin: 10px 0;
@@ -634,7 +650,6 @@ footer {
     .search-toggle {
         justify-content: center;
     }
-
 
     .post-content {
         padding: 0 120px;
@@ -652,4 +667,9 @@ footer {
     #portfolios h5{
         font-size: 18pt;
     }
+
+    #portfolio p, li{
+        font-size:3pt;
+    }
+
 }
