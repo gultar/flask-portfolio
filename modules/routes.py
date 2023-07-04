@@ -24,6 +24,7 @@ def create_routes(app):
             username = request.form.get('username')
             password = request.form.get('password')
 
+            print(env)
             if username == env["ADMIN_USER"] and password == env["ADMIN_PASSWORD"]:
                 session['logged_in'] = True
                 session['username'] = username
