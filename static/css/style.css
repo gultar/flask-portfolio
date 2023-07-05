@@ -567,7 +567,7 @@ footer {
     }
 
     .post-content p, .post-content li{
-        font-size: 8pt;
+        font-size: 10pt;
     }
 
     #portfolios h1{
@@ -598,9 +598,13 @@ footer {
     }
 
     footer{
-        font-size: x-large;
+        font-size: 30pt;
         margin-bottom:50px;
         padding-bottom:50px;
+    }
+
+    .inner-footer p{
+        font-size: 15pt;
     }
 
     .language-toolbar{
