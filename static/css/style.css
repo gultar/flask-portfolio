@@ -242,6 +242,11 @@ h2, h3{
     border: none;
     background-color: transparent;
     color: var(--highlight-1);
+    align-items : center;
+}
+
+.search-button-icon{
+    font-size: large;
 }
 
 
@@ -441,6 +446,7 @@ footer {
     padding-top: 20px;
     justify-content: center;
     flex-direction: row;
+    font-size: large;
 }
 
 .inner-footer {
@@ -513,7 +519,7 @@ footer {
         text-align: center;
     }
 
-    td{
+    td, th{
         font-size:18pt;
     }
 
@@ -592,7 +598,7 @@ footer {
     }
 
     footer{
-        font-size: 15pt;
+        font-size: x-large;
         margin-bottom:50px;
         padding-bottom:50px;
     }
@@ -660,6 +666,16 @@ footer {
         font-size: 20pt;
     }
 
+    footer{
+        font-size: x-large;
+    }
+
+    :root{
+        --size-of-portrait-square:180px;
+    }
+
+    
+
 }
 
 @media only screen and (min-width: 200px) and (max-width: 769px) {
@@ -690,8 +706,15 @@ footer {
         font-size: 18pt;
     }
 
-    #portfolio p, li{
-        font-size:3pt;
+
+    .inner-footer{
+        font-size: x-large !important;
+    }
+
+    .pixel-portrait-container{
+        width: 150px;
+        height: 150px;
+        outline: solid olive;
     }
 
 }

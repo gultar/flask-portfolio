@@ -1,10 +1,6 @@
-# Sacha-Olivier Dulac
-# Translator / Web Developer
+# Translation Services
 
-##### 🌟 Creativity, Adaptability, Usability  🌟
-
-**Contact Information:**
-- Email: [sacha-olivier.dulac@hotmail.com](mailto:sacha-olivier.dulac@hotmail.com)
+##### 🌟 Excellency, reliability and accuracy 🌟
 
 ## Profile
 I have a natural affinity for languages, and I truly love to deepen my understanding of expressions in both French and English. More than just a job, translation is a labour of love for me, and that’s why I chose to pursue a career in this field.
@@ -15,23 +11,14 @@ Increasing your visibility by having your website translated in French is a prio
 Perhaps you want to make your marketing content available to French-speaking customers? 💼
 **Good News!** That's precisely what I do! ✨
 
-**Services offered** 💼
-- General Translation
-- EN/FR Proofreading
-- Content Writing
-- Website Building
+## Translation Services Offered
 
-**IT & Tech** 💻
-- Documentation
-- End User Manuals
-- Website Localization
-- Product Descriptions
-
-**Business** 📊
-- Business Reports
-- Marketing Content
-- Visual Presentations
-- Social Media Content
+| **General** 💼 | **IT & Tech** 💻 | **Business** 📊 |
+|-----------------------|------------------|-----------------|
+| General Translation   | Documentation    | Business Reports |
+| EN/FR Proofreading    | End User Manuals | Marketing Content|
+| Content Writing       | Website Localization | Visual Presentations|
+| Website Building      | Product Descriptions | Social Media Content|
 
 ## Languages
 - French - Native
@@ -61,5 +48,7 @@ Perhaps you want to make your marketing content available to French-speaking cus
 - **Université Laval - Québec, Canada**
   - Bachelor’s in Translation
   - September 2018 - April 2021
+  
 
-
+**Contact Information:**
+- Email: [sacha-olivier.dulac@hotmail.com](mailto:sacha-olivier.dulac@hotmail.com)

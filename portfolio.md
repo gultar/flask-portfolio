@@ -1,5 +1,5 @@
 
-# Portfolio - Web Dev
+# Web Development
 ##### 🌟 Creativity, Adaptability, Usability  🌟
 
 ## About 👋

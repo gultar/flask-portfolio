@@ -1,10 +1,6 @@
-# Sacha-Olivier Dulac 
-# Traducteur / Développeur Web
+# Services de traduction
 
 ##### 🌟 Excellence, fiabilité et précision 🌟
-
-**Coordonnées:**
-- Courriel : [sacha-olivier.dulac@hotmail.com](mailto:sacha-olivier.dulac@hotmail.com)
 
 ## Profil
 J’ai une affinité naturelle avec les langues et j’adore approfondir le sens des expressions en français et en anglais. La traduction, à mes yeux, relève davantage de la passion que du labeur et c’est la raison pour laquelle j’en ai fait mon métier.
@@ -15,23 +11,14 @@ Accroître votre visibilité en traduisant votre site web en français est une p
 Peut-être souhaitez-vous rendre votre contenu marketing accessible aux clients francophones? 💼
 **Bonne nouvelle!** C'est précisément ce que je fais! ✨
 
-**Services offerts** 💼
-- Traduction générale
-- Relecture EN/FR
-- Rédaction de contenu
-- Création de sites web
+## Services de traduction offerts
 
-**IT & Tech** 💻
-- Documentation
-- Manuels d'utilisation
-- Localisation de sites web
-- Descriptions de produits
-
-**Affaires** 📊
-- Rapports d'affaires
-- Contenu marketing
-- Présentations visuelles
-- Contenu des médias sociaux
+| **Général** 💼 | **TI et technologies** 💻 | **Affaires** 📊 |
+|-----------------------|------------------|-----------------|
+| Traduction générale   | Documentation    | Rapports d'affaires |
+| Relecture EN/FR       | Manuels d'utilisation | Contenu marketing |
+| Rédaction de contenu  | Localisation de sites web | Présentations visuelles |
+| Création de sites web | Descriptions de produits | Contenu des médias sociaux |
 
 ## Langues
 
@@ -72,5 +59,8 @@ Peut-être souhaitez-vous rendre votre contenu marketing accessible aux clients 
 - Baccalauréat en traduction
 - Septembre 2018 - Avril 2021
 
+
+**Coordonnées:**
+- Courriel : [sacha-olivier.dulac@hotmail.com](mailto:sacha-olivier.dulac@hotmail.com)
 
 
