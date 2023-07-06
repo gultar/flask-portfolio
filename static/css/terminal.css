@@ -1,6 +1,6 @@
 body{
   background-color: rgb(15, 26, 26);
-
+  font-family: monospace;
   color: var(--terminal-font-color);
 }
 
@@ -25,7 +25,7 @@ body{
     display:block; 
     position:absolute; 
     z-index:9;
-    height:90%;
+    height:100%;
   }
   
   p{

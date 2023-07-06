@@ -245,10 +245,7 @@
     
             const file = directory.getFile(filename)
             if(!file) return false
-    
-            const content = await this.persistance.getFileContent(file.path)
-            
-            return content
+            else return file.content
         }
     
         touch(filePath, content=""){
@@ -876,13 +873,10 @@
     let persistanceInterface = {
         isInterface:true,
         touch:(filename, content)=>{
-            if(typeof localStorage !== 'undefined'){
-                filename = resolvePath(filename)
-                localStorage.setItem(filename, JSON.stringify({
-                    name:filename,
-                    content:content,
-                }))
-            }
+            localStorage.setItem(filename, JSON.stringify({
+                name:filename,
+                content:content,
+            }))
         },
         mkdir:()=>{},
         rmdir:()=>{},

@@ -1,6 +1,6 @@
 :root {
 
-    --base00: #121C21;
+    --base00: #1c1d1f;/*#121C21;*/
     --base01: #1C2C33;
     --base02: #375C6B;
     --base03: #C6E3ED;
@@ -95,12 +95,14 @@ h2, h3{
     justify-content: space-around;
     margin: auto;
     text-align: center;
+    align-items: center;
     color: var(--base04);
     
 }
 
 .wrapping-name{
     display: inline-block;
+    text-align: center;
     width: 100%;
 }
 
@@ -351,9 +353,9 @@ h2, h3{
 }
 
 table {
-    width: 40%;
+    width: 100%;
     border-collapse: collapse;
-    border: 1px dashed #ddd;
+    /* border: 1px dashed #ddd; */
 }
 
 th, td {
@@ -363,7 +365,8 @@ th, td {
 }
 
 th {
-    background-color: grey;
+
+    /* background-color: grey; */
 }
 
 /* Links */
@@ -490,6 +493,44 @@ footer {
   animation-duration: 1s;
   animation-timing-function: steps(30, end);
   animation-fill-mode: forwards;
+}
+
+.skillbars{
+    display: flex;
+    flex-direction: row;
+    margin-bottom:20px;
+    width:100%;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-skillsbars{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin:0px 20px;
+}
+
+.bar {
+    border: 2px solid #0d96e0;
+    border-radius: 20px;
+}
+
+.bar .bar-fill {
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+    animation: fill-bar 2s forwards;
+}
+
+@keyframes fill-bar {
+    100% {
+        width:var(--percentage);
+    }
 }
 
   

@@ -24,10 +24,132 @@ I've been coding for a decade now, and I can't get enough! I've dabbled with var
 
 ## Skills 🚀
 ### The tools I use 🔧
+<div class="skillbars">
+    <div class="panel-skillsbars">
+        <!-- First column of skills -->
+        <div class="skills">
+            <div class="details">
+                <span>JS (Node.js)</span>
+                <span>90%</span>
+            </div>
+            <div class="bar">
+                <div class="bar-fill" style="--percentage: 90%"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+                <span>HTML/CSS/JS</span>
+                <span>85%</span>
+            </div>
+            <div class="bar">
+                <div class="bar-fill" style="--percentage: 85%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-skillsbars">
+        <!-- Second column of skills -->
+        <div class="skills">
+            <div class="details">
+                <span>React.js</span>
+                <span>70%</span>
+            </div>
+            <div class="bar">
+                <div class="bar-fill" style="--percentage: 70%"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+                <span>Python</span>
+                <span>60%</span>
+            </div>
+            <div class="bar">
+                <div class="bar-fill" style="--percentage: 70%"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="skillbars">
+    <div class="panel-skillsbars">
+        <div class="skills">
+            <div class="details">
+            <span>JS (Node.js)</span>
+            <span>90%</span>
+            </div>
+            <div class="bar">
+            <div id="html-bar"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+            <span>HTML/CSS/JS</span>
+            <span>75%</span>
+            </div>
+            <div class="bar">
+            <div id="css-bar"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+            <span>React</span>
+            <span>72%</span>
+            </div>
+            <div class="bar">
+            <div id="javascript-bar"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+            <span>jQuery</span>
+            <span>68%</span>
+            </div>
+            <div class="bar">
+            <div id="jQuery-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-skillsbars">
+        <div class="skills">
+            <div class="details">
+            <span>Python</span>
+            <span>90%</span>
+            </div>
+            <div class="bar">
+            <div id="html-bar"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+            <span>LangChain</span>
+            <span>72%</span>
+            </div>
+            <div class="bar">
+            <div id="javascript-bar"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+            <span>LLMs (OpenAI & Others)</span>
+            <span>55%</span>
+            </div>
+            <div class="bar">
+            <div id="css-bar"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+            <span>jQuery</span>
+            <span>68%</span>
+            </div>
+            <div class="bar">
+            <div id="jQuery-bar"></div>
+            </div>
+        </div>
+    </div>
+  
+</div> -->
 
-| **Tech** | **Tech**     | **Tech**  |
-|:--------:|:------------:|:---------:|
 | Node.js  | Express      | Socket.io |
+|----------|--------------|-----------|
 | Python   | Flask        | jQuery    |
 | Deno     | Electron     | React     |
 | Docker   | Solidity     | Wordpress |
@@ -61,7 +183,6 @@ Skills used:
 - ChatGPT
 - LangChain
 - Prompt Engineering
-
 
 GitHub: [Link](https://github.com/gultar/txtmem)
 

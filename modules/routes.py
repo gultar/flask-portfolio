@@ -2,6 +2,7 @@ from modules.dependencies import *
 from modules.file_utils import *
 from modules.decorators import *
 import os
+import json
 
 def create_routes(app):
         
@@ -227,6 +228,12 @@ def create_routes(app):
             return 'Not found', 404
 
         return read_file(portfolio_path, encoding="UTF-8")
+    
+    @app.route('/get-list-of-pages/',  methods=['GET'])
+    def get_list_of_pages():
+        pages_list = ["coding","coding-fr","translation","translation-fr"]
+        return json.dumps(pages_list)
+
     
     # Route for getting the content of a blog post
     @app.route("/get-post/<slug>", methods=['GET'])

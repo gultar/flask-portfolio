@@ -8,6 +8,7 @@
 <body>
     <div data-page="home" class="post-content">
         {% set navbar_logged_in = logged_in %}
+        {% set navbar_language = language %}
         {% include '_navbar.html' %}
         <div class="language-toolbar">
             {% if language == "English" %}

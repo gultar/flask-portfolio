@@ -25,7 +25,6 @@ class Terminal{
         "clear":"Clears the console",
         "date":"Displays the current date",
         "echo":"Outputs a string into the console. Usage: echo Hello World",
-        "whereis":"Searches for a file or a directory and gives absolute path",
         "ls":'List information about the FILEs (the current directory by default). Usage: ls directory/',
         "rm":'Removes specified file. By default, it does not remove directories. . Usage: rm filename',
         "cd":"Change the working directory of the shell environment. Usage: cd dir1/",
@@ -38,6 +37,8 @@ class Terminal{
         "rmdir":"Remove the DIRECTORY, if it is empty. Usage: rmdir directoryname",
         "whoami":"Displays information concerning host",
         "whereis":"Search for possible paths for a file or directory name",
+        "view":'Displays a Website page. Usage: view coding',
+        "list":'Displays the list of all possible pages. Usage: list',
       },
     };
 
@@ -59,7 +60,8 @@ class Terminal{
       rm:async(args)=>await this.runBash("rm",args),
       whereis:async(args)=>await this.runBash("whereis", args),
       whoami:()=>this.whoami(),
-      goto:(page)=>this.gotoPage(page)
+      view:(page)=>this.viewPage(page),
+      list:()=>this.listPages()
     }
   }
   
@@ -194,7 +196,7 @@ class Terminal{
 
   }
 
-  async gotoPage(path){
+  async viewPage(path){
     fetch('/get-markdown/'+path)
     .then(response => {
       if (!response.ok) {
@@ -215,7 +217,25 @@ class Terminal{
 
   }
 
+  async listPages(){
+    fetch('/get-list-of-pages/')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Request failed');
+      }
+      return response.text();
+    })
+    .then(listContent => {
+      console.log(listContent)
+      this.output(listContent)
+    })
+    .catch(error => {
+      this.output(`<md-block id="page-view">${error}</md-block>`)
+    });
+  }
+
   async runBash(cmd, args){
+
     let result = await this.exec(cmd, args)
     let formattedResult = (typeof result == 'object' ? JSON.stringify(result, null, 2) : result)
     this.output(`<xmp>${formattedResult}</xmp>`)
@@ -636,12 +656,30 @@ class Terminal{
     this.output_.appendChild(line);
   }
 
-  parseArguments(fullCommand){
-    const args = fullCommand.split(' ').filter(function(val, i) {
-      return val;
+  parseArguments(fullCommand) {
+    const args = fullCommand.split(' ');
+  
+    const extractedArgs = [];
+    let quotedArg = '';
+  
+    args.forEach(arg => {
+      if (arg.startsWith('"') || arg.startsWith("'")) {
+        if (arg.endsWith('"') || arg.endsWith("'")) {
+          extractedArgs.push(arg.slice(1, -1));
+        } else {
+          quotedArg = arg.slice(1);
+        }
+      } else if (arg.endsWith('"') || arg.endsWith("'")) {
+        quotedArg += ` ${arg.slice(0, -1)}`;
+        extractedArgs.push(quotedArg);
+        quotedArg = '';
+      } else if (quotedArg) {
+        quotedArg += ` ${arg}`;
+      } else {
+        extractedArgs.push(arg);
+      }
     });
-
-    return args
+    return extractedArgs;
   }
 
   argumentsToString(args){
