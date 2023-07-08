@@ -45,5 +45,5 @@ def format_to_slug(title: str)-> str:
     return title
 
 def remove_special_characters(text):
-    pattern = r'[^a-zA-Z\s\-]'
+    pattern = r'[^a-zA-Z0-9\s\-]'
     return re.sub(pattern, '', text)

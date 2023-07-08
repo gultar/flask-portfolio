@@ -5,3 +5,5 @@ flask_session/*
 csr.pem
 key.pem
 cert.pem
+_backup_posts
+_backup_posts/*

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post_title }}</title>
+    {% include '_header.html' %}
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% set navbar_language = language %}
+        {% include '_navbar.html' %}
+        <div class="skills-container">
+            <div class="skillbars">
+                <div class="panel-skillsbars">
+                    <!-- First column of skills -->
+                    <div class="skills">
+                        <div class="details">
+                            <span>Node.js</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Python</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Deno</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Docker</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 55%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Gulp</span>
+                            <span>35%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 35%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Sass</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>GPT-3.5</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-skillsbars">
+                    <!-- Second column of skills -->
+                    <div class="skills">
+                        <div class="details">
+                            <span>Express</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Flask</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Electron</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Solidity</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>PHP</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>DigitalOcean</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Hugging Face</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-skillsbars">
+                    <!-- Third column of skills -->
+                    <div class="skills">
+                        <div class="details">
+                            <span>Socket.io</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>jQuery</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>React</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Wordpress</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>MySQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>Pinecone</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details">
+                            <span>LangChain</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="--percentage: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        {% include '_footer.html' %}
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post_title }}</title>
+    {% include '_header.html' %}
+    <meta charset="UTF-8">
+</head>
+<body>
+    
+    <div class="post-content">
+        {% set navbar_logged_in = logged_in %}
+        {% include '_navbar.html' %}
+        <div class="language-toolbar">
+            {% if request.path.endswith("-fr") %}
+                {% set english_path = request.path.replace("-fr","") %}
+                <a href="{{ english_path }}">English</a>
+            {% else %}
+                {% set french_path = request.path + "-fr" %}
+                <a href="{{ french_path }}">Français</a>
+            {% endif %}
+        </div>
+        <div class="pixel-portrait-container">
+            <span class="portrait-image-holder">
+                <span class="pixel-portrait"></span>
+            </span>
+        </div>
+        
+        <md-block>
+            {{ post_content | safe }}
+        </md-block>
+        {% include '_footer.html' %}
+    </div>
+
+</body>
+</html>

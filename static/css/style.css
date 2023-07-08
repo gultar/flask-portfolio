@@ -7,9 +7,9 @@
     --base04: #F3FAFF;
     --nav-footer-border: #234659;
     --delete-button:#dc1701;
-    --highlight-1: #FFB600;
-    --highlight-2: #41D446;
-    --highlight-3: #9370DB;
+    --highlight-1: #41D446;
+    --highlight-2: #0d96e0;;
+    --highlight-3:#9370DB;/* #FFB600;*/
     --size-of-portrait-square:110px;
 }
 
@@ -515,7 +515,7 @@ footer {
 }
 
 .bar {
-    border: 2px solid #0d96e0;
+    border: 2px solid var(--highlight-3);
     border-radius: 20px;
 }
 
@@ -523,7 +523,7 @@ footer {
     width: 0;
     height: 8px;
     border-radius: 10px;
-    background-color: #0d96e0;
+    background-color: var(--highlight-3);
     animation: fill-bar 2s forwards;
 }
 
