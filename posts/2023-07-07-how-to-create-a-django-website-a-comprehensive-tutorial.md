@@ -1,6 +1,6 @@
 # How to Create a Django Website: A Comprehensive Tutorial
 
-*Date: 2023-07-07*
+*Published: 2023-07-07*
 
 Are you ready to take your web development skills to the next level? In this tutorial, we will guide you through the process of creating a Django website. Assuming that you are already familiar with the core concepts of Django, we will provide you with the necessary steps and code to get started. By the end of this tutorial, you will have the knowledge and tools to create your own Django website.
 
@@ -127,3 +127,4 @@ So, what are you waiting for? Start building your Django website today and unlea
 - [Django Girls Tutorial](https://tutorial.djangogirls.org/)
 - [Real Python Django Tutorials](https://realpython.com/tutorials/django/)
 - [Mozilla Developer Network Django Guide](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django)
+        

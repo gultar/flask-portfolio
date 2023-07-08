@@ -1,8 +1,6 @@
-# Tutorial: Creating a Dashboard with Next.js
+                                    # Tutorial: Creating a Dashboard with Next.js
 
-*Date: 2023-07-07*
-
-## Introduction
+*Published: 2023-07-07*
 
 In this tutorial, we will guide you on how to create a dashboard with Next.js. Assuming the user knows about Next.js' core concepts, we will provide detailed instructions and code examples to help you build your own dashboard. By following this tutorial, you will gain valuable insights into Next.js and learn how to leverage its features to create a powerful dashboard for your web application.
 
@@ -14,7 +12,7 @@ Before getting started, make sure you have a good understanding of Next.js' core
 
 To begin, create a new Next.js project by running the following command in your terminal:
 
-```
+```bash
 npx create-next-app my-dashboard
 ```
 
@@ -58,3 +56,7 @@ Remember to refer to the Next.js documentation and community resources for more 
 - [NextAuth.js Documentation](https://next-auth.js.org/)
 - [Redux](https://redux.js.org/)
 - [Zustand](https://zustand.surge.sh/)
+        
+        
+        
+        

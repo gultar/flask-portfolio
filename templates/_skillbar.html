@@ -1,0 +1,31 @@
+<style>
+    
+.bar {
+    border: 2px solid var(--highlight-3);
+    border-radius: 20px;
+}
+
+.bar .bar-fill {
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: var(--highlight-3);
+    animation: fill-bar 2s forwards;
+}
+
+@keyframes fill-bar {
+    100% {
+        width:var(--percentage);
+    }
+}
+
+</style>
+<div class="skills">
+    <div class="details">
+        <span>{{ skill_name }}</span>
+        <span>{{ skill_percentage }}%</span>
+    </div>
+    <div class="bar">
+        <div class="bar-fill" style="--percentage: {{ skill_percentage }}%"></div>
+    </div>
+</div>

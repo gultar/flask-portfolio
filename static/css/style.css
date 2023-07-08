@@ -513,7 +513,7 @@ footer {
     width:100%;
     margin:0px 20px;
 }
-
+/* 
 .bar {
     border: 2px solid var(--highlight-3);
     border-radius: 20px;
@@ -531,7 +531,7 @@ footer {
     100% {
         width:var(--percentage);
     }
-}
+} */
 
   
 @keyframes typing {

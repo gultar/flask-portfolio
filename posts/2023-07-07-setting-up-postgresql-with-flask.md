@@ -1,6 +1,6 @@
 # Tutorial: Setting up PostgreSQL with Flask
 
-*Date: 2023-07-07*
+*Published: 2023-07-07*
 
 In this tutorial, we will guide you on how to set up PostgreSQL with Flask. Assuming you already have knowledge of PostgreSQL and Flask's core concepts, we will provide step-by-step instructions and code examples to help you create a working setup. 
 
@@ -137,3 +137,4 @@ Congratulations! You have successfully set up PostgreSQL with Flask. By followin
 Remember to handle exceptions, sanitize user input, and follow best practices for database security. For more advanced features and functionality, explore Flask extensions and PostgreSQL's rich set of features.
 
 Happy coding!
+        
