@@ -32,11 +32,9 @@
             <div class="post-column">
                 
                 {% for content in post_contents %}
-                    <p>
-                        <md-block class="post-column-article">
-                            {{ content | safe }}
-                        </md-block>
-                    </p>
+                    <md-block class="post-column-article">
+                        {{ content | safe }}
+                    </md-block>
                 {% endfor %}
                 
                 <div class="pagination">

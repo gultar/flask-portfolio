@@ -1,4 +1,4 @@
-                                    # Tutorial: Creating a Dashboard with Next.js
+# Tutorial: Creating a Dashboard with Next.js
 
 *Published: 2023-07-07*
 
@@ -56,7 +56,3 @@ Remember to refer to the Next.js documentation and community resources for more 
 - [NextAuth.js Documentation](https://next-auth.js.org/)
 - [Redux](https://redux.js.org/)
 - [Zustand](https://zustand.surge.sh/)
-        
-        
-        
-        

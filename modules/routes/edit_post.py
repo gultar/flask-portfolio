@@ -12,6 +12,7 @@ def register_route(routes_blueprint, app, env):
 
         if request.method == 'POST':
             new_content = request.form.get('content')
+            print('Received content', new_content)
             # Generate a unique filename for the new post
             slug = format_to_slug(slug)
 

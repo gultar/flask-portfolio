@@ -10,10 +10,10 @@ def register_route(routes_blueprint, app, env):
         posts_per_page = 5
         posts = os.listdir('./posts')
         paths = [post.replace(".md", "") for post in posts]
-        print('Path unsorted', paths)
+        
         # Sort the paths based on the file modification timestamp in descending order
         paths.sort(key=lambda x: os.path.getmtime(f"./posts/{x}.md"), reverse=True)
-        print('Path sorted', paths)
+        
         total_posts = len(paths)
         total_pages = (total_posts + posts_per_page - 1) // posts_per_page
 
@@ -28,10 +28,13 @@ def register_route(routes_blueprint, app, env):
             post_path = f"./posts/{post}.md"
             if os.path.exists(post_path):
                 post_content = read_file(post_path)
+                # print('post_content',post_content)
                 post_content = extract_text_until_subtitle(post_content)
+                print('extract_text_until_subtitle',post_content)
                 post_content_with_link = wrap_title_with_link(post_content, post)
+                print('wrap_title_with_link', post_content_with_link)
                 post_contents.append(post_content_with_link)
-        print('Shit fuck shit')
+                
         return render_template(
             'blog.html',
             posts=paged_paths,

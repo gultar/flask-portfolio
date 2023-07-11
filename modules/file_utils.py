@@ -2,11 +2,13 @@ from modules.dependencies import *
 
 def read_file(filename, encoding="latin-1"):
     with open(filename, 'r', encoding=encoding) as f:
-        return f.read()
+        file = f.read()
+        return file.strip()
     
 def write_file(filename, content, encoding="latin-1"):
     with open(filename, 'w', encoding=encoding) as f:
-        f.write(content)
+        cleaned = content.strip()
+        f.write(cleaned)
 
 def wrap_title_with_link(text, post_slug):
     match = re.search(r'^(#+)\s*(.*)', text, re.MULTILINE)
@@ -15,7 +17,6 @@ def wrap_title_with_link(text, post_slug):
         title_level = match.group(1)
         print(title_level)
         title = match.group(2)
-        # wrapped_title = f'{title_level} [{title}](/post/{post_slug})'
         wrapped_title = f"<h2><a href='/post/{post_slug}' class='post-title-link'>{title}</a></h2>"
         modified_text = re.sub(r'^(#+)\s*(.*)$', wrapped_title, text, flags=re.MULTILINE)
         return modified_text
@@ -26,7 +27,8 @@ def extract_text_until_subtitle(text):
     match = re.search(r'^(.+?)(?=\n\n## )', text, re.MULTILINE | re.DOTALL)
 
     if match:
-        return match.group(1)
+        text = match.group(1)
+        return text.strip()
     else:
         return None
 
