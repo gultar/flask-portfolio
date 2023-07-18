@@ -4,8 +4,8 @@
     <a class="nav-element{% if current_page == '/' %} active{% endif %}" href="/">
         <span>{% if current_page == '/' %}{{ '#' }}{% endif %}Coding{% if current_page == '/' %}{{ '#' }}{% endif %}</span>
     </a>
-    <a class="nav-element{% if current_page == '/translation' %} active{% endif %}" href="/translation">
-        <span>{% if current_page == '/translation' %}{{ '#' }}{% endif %}Translation{% if current_page == '/translation' %}{{ '#' }}{% endif %}</span>
+    <a class="nav-element{% if current_page == '/about' %} active{% endif %}" href="/about">
+        <span>{% if current_page == '/about' %}{{ '#' }}{% endif %}About{% if current_page == '/about' %}{{ '#' }}{% endif %}</span>
     </a>
     <a class="nav-element{% if current_page == '/blog' %} active{% endif %}" href="/blog">
         <span>{% if current_page == '/blog' %}{{ '#' }}{% endif %}Blog{% if current_page == '/blog' %}{{ '#' }}{% endif %}</span>
@@ -16,7 +16,7 @@
     <a class="nav-element{% if current_page == '/' %} active{% endif %}" href="/projects">
         <span>Projects</span>
     </a>
-
+    
 </nav>
 <h1 class="my-name">
     {% if (request.url_rule.endpoint == 'index') or (request.url_rule.endpoint == 'translation') or (request.url_rule.endpoint == 'coding_fr') or (request.url_rule.endpoint == 'translation_fr') %}

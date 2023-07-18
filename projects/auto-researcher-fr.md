@@ -6,13 +6,13 @@ Auto-Researcher est un outil avancé de recherche et de génération de contenu 
 
 Le projet offre les fonctionnalités suivantes :
 
-1. **Recherche et Trouver les Meilleurs Articles** : Recherchez et découvrez les articles les plus pertinents en fonction de requêtes spécifiques, en économisant du temps et des efforts dans la recherche manuelle.
+1. **Effectuer une recherche et trouver les meilleurs articles** : Recherchez et découvrez les articles les plus pertinents en fonction de requêtes spécifiques, en économisant du temps et des efforts dans la recherche manuelle.
 
-2. **Résumer le Texte** : Générez des résumés concis du texte, en extrayant les informations clés et les points principaux de manière efficace.
+2. **Résumer le texte** : Générez des résumés concis du texte, en extrayant les informations clés et les points principaux de manière efficace.
 
-3. **Résumer le Site Web** : Récupérez le contenu texte d'un site Web et obtenez des résumés condensés, fournissant une vue d'ensemble des informations du site Web.
+3. **Résumer le site Web** : Récupérez le contenu texte d'un site Web et obtenez des résumés condensés, fournissant une vue d'ensemble des informations du site Web.
 
-4. **Traduire le Texte** : Traduisez du texte entre différentes langues tout en préservant la mise en forme, garantissant des traductions précises et idiomatiques.
+4. **Traduire le texte** : Traduisez du texte entre différentes langues tout en préservant la mise en forme, garantissant des traductions précises et idiomatiques.
 
 5. **Enregistrer les Résultats dans des Fichiers** : Option pour enregistrer les résultats de recherche, les résumés, les traductions et les billets de blog dans des fichiers pour référence future ou traitement ultérieur.
 
@@ -30,7 +30,7 @@ Pour exécuter ce projet, assurez-vous d'avoir les dépendances suivantes instal
 
 Vous pouvez installer les dépendances en utilisant le gestionnaire de packages de votre choix en exécutant la commande suivante :
 
-```
+```bash
 pip install langchain playwright python-dotenv duckduckgo-search google-api-python-client openai unstructured
 ```
 
@@ -40,7 +40,7 @@ De plus, vous devez configurer un fichier d'environnement (`.env`) contenant les
 
 Pour utiliser Auto-Researcher, suivez ces étapes :
 
-1. Installez les dépendances requises à l'aide de votre gestionnaire de packages préféré.
+1. Installez les dépendances requises à l'aide de votre gestionnaire de paquets préféré.
 2. Configurez le fichier `.env` avec les clés d'API et les configurations appropriées.
 3. Exécutez le projet en utilisant votre environnement Python.
 

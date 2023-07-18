@@ -4,13 +4,13 @@ from modules.file_utils import *
 
 # @routes_blueprint.record
 def register_route(routes_blueprint, app, env):
-    @app.route('/translation-fr')
-    def translation_fr():
-        portfolio_content = read_file("./translation_portfolio-fr.md", encoding="UTF-8")
+    @app.route('/about')
+    def about():
+        about_content = read_file("./about.md", encoding="UTF-8")
         return render_template(
-            'translation-portfolio.html',
-            portfolio_content=portfolio_content,
-            language="French",
+            'about.html',
+            about_content=about_content,
+            language="English",
             logged_in=session.get('logged_in'),
             username=session.get('username')
         )

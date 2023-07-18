@@ -97,13 +97,13 @@ h2, h3{
     text-align: center;
     align-items: center;
     color: var(--base04);
-    
 }
 
 .wrapping-name{
     display: inline-block;
     text-align: center;
     width: 100%;
+    margin: 80px 0px;
 }
 
 .name {
@@ -513,7 +513,11 @@ footer {
     width:100%;
     margin:0px 20px;
 }
-/* 
+
+.skills{
+    margin-bottom:20px;
+}
+
 .bar {
     border: 2px solid var(--highlight-3);
     border-radius: 20px;
@@ -531,8 +535,7 @@ footer {
     100% {
         width:var(--percentage);
     }
-} */
-
+}
   
 @keyframes typing {
   from { width: 0 }
