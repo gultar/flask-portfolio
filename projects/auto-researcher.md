@@ -1,3 +1,5 @@
+![auto-researcher](/static/images/tundraos.jpg)
+
 # Auto-Researcher 🧠✍️
 
 Auto-Researcher is an advanced research and content generation tool that leverages language processing functionalities and APIs. With its powerful features, you can effortlessly search for relevant articles, summarize text, translate content, and generate captivating blog posts. It simplifies the research process and enhances productivity for researchers, writers, and content creators.

@@ -342,6 +342,11 @@ h2, h3{
     animation-duration: 0.8s;
 }
 
+.post-content img{
+    max-width: 800px;
+    max-height:auto;
+}
+
 .reading-time {
     position: fixed;
     bottom: 10px;
