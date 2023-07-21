@@ -6,7 +6,7 @@ from modules.file_utils import *
 def register_route(routes_blueprint, app, env):
     @app.route('/about')
     def about():
-        about_content = read_file("./about.md", encoding="UTF-8")
+        about_content = read_file("./pages/about.md", encoding="UTF-8")
         return render_template(
             'about.html',
             about_content=about_content,

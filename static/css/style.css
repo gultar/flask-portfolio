@@ -10,7 +10,7 @@
     --highlight-1: #41D446;
     --highlight-2: #0d96e0;;
     --highlight-3:#9370DB;/* #FFB600;*/
-    --size-of-portrait-square:110px;
+    --size-of-portrait-square:130px;
 }
 
 
@@ -103,7 +103,7 @@ h2, h3{
     display: inline-block;
     text-align: center;
     width: 100%;
-    margin: 80px 0px;
+    margin: 40px 0px;
 }
 
 .name {

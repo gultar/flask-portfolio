@@ -6,7 +6,7 @@ from modules.file_utils import *
 def register_route(routes_blueprint, app, env):
     @app.route('/coding-fr')
     def coding_fr():
-        portfolio_content = read_file("./portfolio-fr.md", encoding="UTF-8")
+        portfolio_content = read_file("./pages/portfolio-fr.md", encoding="UTF-8")
         return render_template(
             'index.html',
             portfolio_content=portfolio_content,
