@@ -159,8 +159,9 @@ h2, h3{
     width: 100%;
     justify-content: center;
     font-size: large;
-    height: 35px;
+    height: 45px;
     border-bottom: dashed 2px var(--nav-footer-border);
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -352,10 +353,14 @@ hr{
     animation-duration: 0.8s;
 }
 
+
+
 .post-content img{
     max-width: 800px;
     max-height:auto;
 }
+
+
 
 .reading-time {
     position: fixed;
@@ -598,6 +603,10 @@ footer {
         height: 100%;
         flex-direction: column;
         
+    }
+
+    pre{
+        font-size:20pt !important;
     }
 
     .blog-navbar-element{
