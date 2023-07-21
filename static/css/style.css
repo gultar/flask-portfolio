@@ -1,6 +1,6 @@
 :root {
 
-    --base00: #1c1d1f;/*#121C21;*/
+    --base00: #1d1e1f;/*#121C21;*/
     --base01: #1C2C33;
     --base02: #375C6B;
     --base03: #C6E3ED;
@@ -332,6 +332,16 @@ h2, h3{
     text-align: center;
 }
 
+hr{
+    background-color: var(--base00) !important;
+    border-top: 2px dashed var(--nav-footer-border);
+    border-bottom: none;
+}
+
+.post-column .post-column-article:not(:last-of-type) {
+    border-bottom: 2px dashed var(--nav-footer-border);
+}
+
 /* Post Content */
 .post-content {
     margin-top: 20px;
@@ -361,12 +371,14 @@ table {
     width: 100%;
     border-collapse: collapse;
     /* border: 1px dashed #ddd; */
+    background-color: var(--base01);
+    border: 2px dashed var(--nav-footer-border)
 }
 
 th, td {
     padding: 10px 30px;
     text-align: center;
-    border: 1px dashed #ddd;
+    /* border: 1px dashed #ddd; */
 }
 
 th {

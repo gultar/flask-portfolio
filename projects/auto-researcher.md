@@ -1,4 +1,4 @@
-![auto-researcher](/static/images/tundraos.jpg)
+![auto-researcher](/static/images/researcher.jpg)
 
 # Auto-Researcher 🧠✍️
 

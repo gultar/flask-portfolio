@@ -18,10 +18,3 @@
     </a>
     
 </nav>
-<h1 class="my-name">
-    {% if (request.url_rule.endpoint == 'index') or (request.url_rule.endpoint == 'translation') or (request.url_rule.endpoint == 'coding_fr') or (request.url_rule.endpoint == 'translation_fr') %}
-    <span class="wrapping-name typed"># <a class="name" href="/">Sacha-Olivier Dulac</a> #</span>
-    {% else %}
-    <!-- <span class="wrapping-name"># <a class="name" href="/">Sacha-Olivier Dulac</a> #</span> -->
-    {% endif %}
-</h1>
