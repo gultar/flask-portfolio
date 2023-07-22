@@ -1,3 +1,5 @@
+![auto-researcher](/static/images/researcher.jpg)
+
 # Auto-Researcher 🧠✍️
 
 Auto-Researcher est un outil avancé de recherche et de génération de contenu qui exploite les fonctionnalités de traitement du langage et les API. Grâce à ses fonctionnalités puissantes, vous pouvez facilement rechercher des articles pertinents, résumer du texte, traduire du contenu et générer des billets de blog captivants. Il simplifie le processus de recherche et améliore la productivité des chercheurs, des écrivains et des créateurs de contenu.

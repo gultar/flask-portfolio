@@ -355,8 +355,8 @@ hr{
 
 
 
-.post-content img{
-    max-width: 800px;
+.post-content img, md-block p img{
+    max-width: 870px;
     max-height:auto;
 }
 
@@ -607,6 +607,10 @@ footer {
 
     pre{
         font-size:20pt !important;
+    }
+
+    .content img{
+        
     }
 
     .blog-navbar-element{
