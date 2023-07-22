@@ -9,9 +9,12 @@
     </span>
 </div>
 
+---
+
 ## Wanderlust and Cultural Immersion 🧭
 
 One of the things that truly brings me joy is embarking on journeys to explore different corners of the world. Immersing myself in diverse cultures, engaging with locals, and discovering the hidden gems of each place fuels my curiosity and broadens my perspective. I've been fortunate enough to visit remarkable destinations such as Morocco, Spain, New Zealand, Australia, Mexico, and Costa Rica, each leaving an indelible mark on my soul.
+
 
 ## Pursuits and Interests 🌟
 
@@ -34,6 +37,8 @@ One of the highlights of my life is the joy I find in connecting with people fro
 ### The Rhythm of Dance 💃
 
 Lastly, I must confess my love for bachata dancing. The rhythm, sensuality, and connection it brings captivate me. It's a way for me to express myself, let loose, and connect with the music and my dance partner on a profound level.
+
+---
 
 ## Conclusion 🎉
 

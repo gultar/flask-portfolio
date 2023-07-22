@@ -1,4 +1,33 @@
-# Projects 📚
+# Web Development
+
+### Technical Info 🛠️
+- Operating systems: Elementary OS, Ubuntu, Windows 10
+- Editors: VS Code, Bootleg Ace, Nano
+- Programming Languages: HTML5/CSS3, JS, Python, Typescript, Solidity, PHP, MySQL, Sass
+- Tools: Git, PHPMyAdmin, MySQL Workbench, ChatGPT, Bing Chat
+- Frameworks: React, Fresh, WordPress, Ghost CMS, LangChain
+
+### Personal Info ℹ️
+- Age: 30
+- Height: 5'10'' (178 cm)
+- Hobbies: Coding, Jogging, Archery, Exploring, BJJ, Watercolour 🏹🎨
+- Fluent in: French, English, Spanish 🇫🇷🇺🇸🇪🇸
+- Conversational in: Moroccan Arabic
+- Basic level in: Russian, Portuguese
+
+## Skills 🚀
+### The tools I use 🔧
+
+| Node.js  | Express      | Socket.io |
+|----------|--------------|-----------|
+| Python   | Flask        | jQuery    |
+| Deno     | Electron     | React     |
+| Docker   | Solidity     | Wordpress |
+| Gulp     | PHP          | MySQL     |
+| Sass     | DigitalOcean | Pinecone  |
+| GPT-3.5  | Hugging Face | LangChain |
+
+## Projects 📚
 
 Here is a brief overview of the projects I've been working on lately:
 

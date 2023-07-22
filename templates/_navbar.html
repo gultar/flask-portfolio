@@ -1,6 +1,6 @@
 <nav class="navbar">
     <a class="nav-element{%- if request.path== '/' %} active{% endif %}" href="/">
-        <span>{%- if request.path== '/' %}[{% endif %}Coding{%- if request.path== '/' %}]{% endif %}</span>
+        <span>{%- if request.path.startswith('/projects') %}[{% elif request.path=='/' %}[{% endif %}Projects{%- if request.path.startswith('/projects') %}] {% elif request.path=='/' %}]{% endif %}</span>
     </a>
     <a class="nav-element{%- if request.path== '/about' %} active{% endif %}" href="/about">
         <span>{%- if request.path== '/about' %}[{% endif %}About{%- if request.path== '/about' %}]{% endif %}</span>
@@ -10,8 +10,5 @@
     </a>
     <a class="nav-element{%- if request.path== '/skills' %} active{% endif %}" href="/skills">
         <span>{%- if request.path== '/skills' %}[{% endif %}Skills{%- if request.path== '/skills' %}]{% endif %}</span>
-    </a>
-    <a class="nav-element{%- if request.path== '/projects' %} active{% endif %}" href="/projects">
-        <span>{%- if request.path== '/projects' %}[{% endif %}Projects{%- if request.path== '/projects' %}]{% endif %}</span>
     </a>
 </nav>

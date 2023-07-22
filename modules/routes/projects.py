@@ -4,8 +4,8 @@ from modules.file_utils import *
 
 # @routes_blueprint.record
 def register_route(routes_blueprint, app, env):
-    @app.route('/projects')
-    def projects():
+    @app.route('/')
+    def index():
         portfolio_content = read_file("./pages/projects.md", encoding="UTF-8")
         return render_template(
             'projects.html',
