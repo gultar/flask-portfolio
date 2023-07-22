@@ -1,3 +1,5 @@
+![tundraos](/static/images/tundraos.jpg)
+
 # Tundra OS ❄️🖥️
 
 An electron-powered desktop environment designed to provide a seamless user experience.

@@ -1,3 +1,5 @@
+![albanil](/static/images/albanil-lexica.jfif)
+
 # Albañil - Un générateur d'applications basé sur des spécifications
 
 Albañil est un constructeur d'applications personnel qui vous aide à créer des applications en fonction d'un ensemble de spécifications fournies par l'utilisateur. Il génère la structure de fichiers et le code de l'application en fonction des spécifications données.

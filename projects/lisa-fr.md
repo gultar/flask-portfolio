@@ -1,3 +1,5 @@
+![lisa](/static/images/lisa-lexica-3.jfif)
+
 # Lisa - Assistant Personnel d'IA 💁‍♀️🤖
 
 Lisa est votre assistant personnel d'IA conçu pour fournir une interface conversationnelle pour des interactions fluides. Alimentée par le traitement du langage naturel et la gestion des conversations, Lisa comprend vos requêtes et fournit des réponses pertinentes.

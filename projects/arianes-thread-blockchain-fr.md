@@ -1,3 +1,5 @@
+![auto-researcher](/static/images/arianesthread.png)
+
 # Ariane's Thread - Cadre de la blockchain
 
 Une plateforme de blockchain basée sur Node.js, Socket.io et Rocket-Store avec prise en charge de contrats intelligents écrits en JavaScript et un protocole de consensus pluggable. La plateforme est livrée avec des fonctionnalités de preuve de travail (Proof of Work) et de permission. Il s'agit toujours d'un travail en cours et il le restera probablement pendant un certain temps, mais n'hésitez pas à me contacter ou à contribuer à ce projet, car j'aimerais le voir utilisé à bon escient.

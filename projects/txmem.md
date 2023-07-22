@@ -1,3 +1,5 @@
+![txmem](/static/images/txmem.png)
+
 # Translation Memory Interface
 
 This is a React application that serves as a user interface for a translation memory system. It connects to a local Python API that provides translation segments and related files. The application allows users to search for translation segments, view search results, and access additional information from Linguee.

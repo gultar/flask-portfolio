@@ -1,3 +1,5 @@
+![tundraos](/static/images/tundraos.jpg)
+
 # Tundra OS ❄️🖥️
 
 Un environnement de bureau alimenté par Electron conçu pour offrir une expérience utilisateur fluide.

@@ -4,7 +4,7 @@ from modules.file_utils import *
 
 # @routes_blueprint.record
 def register_route(routes_blueprint, app, env):
-    @app.route('/post/<slug>')
+    @app.route('/blog/<slug>')
     def post(slug):
         post_path = f"./posts/{slug}.md"
 

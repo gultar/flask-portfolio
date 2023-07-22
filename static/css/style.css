@@ -97,6 +97,7 @@ h2, h3{
     text-align: center;
     align-items: center;
     color: var(--base04);
+    visibility: hidden;
 }
 
 .wrapping-name{
@@ -111,10 +112,12 @@ h2, h3{
     color: var(--base04);
     font-size: 30pt;
     text-align: center;
+    visibility: visible;
 }
 
 .my-name:hover {
     color: var(--highlight-2);
+    visibility: visible;
 }
 
 .my-name:hover .name {
@@ -175,6 +178,10 @@ h2, h3{
 .nav-element{
     padding: 0px 10px;
     transition: color 0.3 ease;
+}
+
+.nav-element .active{
+    
 }
 
 .nav-element:hover{

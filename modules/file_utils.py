@@ -17,7 +17,7 @@ def wrap_title_with_link(text, post_slug):
         title_level = match.group(1)
         print(title_level)
         title = match.group(2)
-        wrapped_title = f"<h2><a href='/post/{post_slug}' class='post-title-link'>{title}</a></h2>"
+        wrapped_title = f"<h2><a href='/blog/{post_slug}' class='post-title-link'>{title}</a></h2>"
         modified_text = re.sub(r'^(#+)\s*(.*)$', wrapped_title, text, flags=re.MULTILINE)
         return modified_text
     else:

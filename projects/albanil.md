@@ -1,3 +1,5 @@
+![albanil](/static/images/albanil-lexica.jfif)
+
 # Albañil - A prompt-driven application bootstrapper
 
 Albañil is a personal application builder that helps you create applications based on a set of specifications provided by the user. It generates the file structure and code for the application based on the given specifications.
