@@ -140,11 +140,7 @@ h2, h3{
     width: var(--size-of-portrait-square);
     background-color: #0d1012;
     border-radius: 50%;
-    /* margin-left: 100px; */
     margin-top: 10px;
-    /* -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); */
-    /* border: 1px solid var(--highlight-2); */
 }
 
 .pixel-portrait {
@@ -155,10 +151,6 @@ h2, h3{
     background-image: url("../images/portrait.jpg");
     transition: background-image .2s;
     background-size: contain;
-}
-
-.pixel-portrait:hover{
-    /* background-image: url("../images/portrait.jpg"); */
 }
 
 /* Navbar */
@@ -385,12 +377,13 @@ table {
     border-collapse: collapse;
     /* border: 1px dashed #ddd; */
     background-color: var(--base01);
-    border: 2px dashed var(--nav-footer-border)
+    border: 2px dashed var(--nav-footer-border);
 }
 
 th, td {
     padding: 10px 30px;
     text-align: center;
+    border: 2px dashed var(--nav-footer-border);
     /* border: 1px dashed #ddd; */
 }
 
@@ -541,7 +534,12 @@ footer {
     display: flex;
     flex-direction: column;
     width:100%;
-    margin:0px 20px;
+    margin:20px 20px;
+}
+
+.skills-container{
+    background-color: var(--base01);
+    border: dashed 2px var(--nav-footer-border);
 }
 
 .skills{
