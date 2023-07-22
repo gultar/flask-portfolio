@@ -559,6 +559,13 @@ footer {
     animation: fill-bar 2s forwards;
 }
 
+pre{
+    padding: 5px;
+    font-size:10pt !important;
+    overflow-x:scroll; 
+    border: dashed 2px var(--nav-footer-border);
+}
+
 @keyframes fill-bar {
     100% {
         width:var(--percentage);
@@ -612,7 +619,11 @@ footer {
     }
 
     pre{
+        background-color: var(--base02);
+        padding: 5px;
         font-size:20pt !important;
+        overflow-x:scroll; 
+        border: dashed 2px var(--nav-footer-border);
     }
 
     .content img{
