@@ -2,7 +2,15 @@
 
 ## Introduction
 
-Bonjour ! Je suis ravi de me présenter à vous. Je suis un aventurier de 30 ans originaire de la belle province de Québec, au Canada. Ma vie tourne autour de ma passion insatiable pour les voyages, l'apprentissage des langues, la croissance personnelle et l'acceptation de nouveaux défis.
+<div class="pixel-portrait-container">
+    <p><em>Bonjour !</em> Je tiens à me présenter. Je m'appelle Sacha-Olivier Dulac et je suis un aventurier de 30 ans originaire de la belle province du Québec, au Canada. J'ai choisi de centrer ma vie sur ma passion insatiable pour les voyages, l'apprentissage des langues, la croissance personnelle et l'acceptation de nouveaux défis.<br><br>Je
+    programme depuis mes 14 ans, âge à laquelle j'ai découvert RPG Maker 2003. Ce logiciel m'a permis d'apprendre les bases de la logique de programmation tout en m'amusant. Mes amis et moi avions créé des jeux de rôles plus rocambolesques les uns que les autres.</p>
+    <span class="portrait-image-holder">
+        <span class="pixel-portrait"></span>
+    </span>
+</div>
+
+
 
 ## Soif de découverte et immersion culturelle
 

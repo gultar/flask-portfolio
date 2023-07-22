@@ -10,7 +10,7 @@
     --highlight-1: #41D446;
     --highlight-2: #0d96e0;;
     --highlight-3:#9370DB;/* #FFB600;*/
-    --size-of-portrait-square:130px;
+    --size-of-portrait-square:150px;
 }
 
 
@@ -131,6 +131,7 @@ h2, h3{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-right: 100px;
 }
 
 .portrait-image-holder{
@@ -139,7 +140,11 @@ h2, h3{
     width: var(--size-of-portrait-square);
     background-color: #0d1012;
     border-radius: 50%;
-    border: 1px solid var(--highlight-1);
+    /* margin-left: 100px; */
+    margin-top: 25px;
+    /* -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); */
+    /* border: 1px solid var(--highlight-2); */
 }
 
 .pixel-portrait {
@@ -147,13 +152,13 @@ h2, h3{
     height: var(--size-of-portrait-square);
     width: var(--size-of-portrait-square);
     border-radius: 50%;
-    background-image: url("../images/portrait-8bit.png");
+    background-image: url("../images/portrait.jpg");
     transition: background-image .2s;
     background-size: contain;
 }
 
 .pixel-portrait:hover{
-    background-image: url("../images/portrait.jpg");
+    /* background-image: url("../images/portrait.jpg"); */
 }
 
 /* Navbar */
@@ -178,10 +183,6 @@ h2, h3{
 .nav-element{
     padding: 0px 10px;
     transition: color 0.3 ease;
-}
-
-.nav-element .active{
-    
 }
 
 .nav-element:hover{

@@ -1,8 +1,15 @@
 # About Me: A Passionate Explorer Seeking New Experiences
 
+
+
 ## Introduction
 
-Hello there! I'm delighted to introduce myself to you. I'm a 30-year-old adventurer hailing from the beautiful province of Québec in Canada. My life revolves around my insatiable passion for travel, language learning, personal growth, and embracing new challenges.
+<div class="pixel-portrait-container">
+    <p>Hello there! Let me introduce myself. I'm Sacha-Olivier Dulac, and I'm a 30-year-old adventurer hailing from the beautiful province of Québec in Canada. My life revolves around my insatiable passion for travel, language learning, personal growth, and embracing new challenges.<br><br>I have been programming since I was 14 years old, the age at which I discovered RPG Maker 2003. This software allowed me to learn the basics of programming logic while having fun. My friends and I created increasingly adventurous and extravagant RPG games.</p>
+    <span class="portrait-image-holder">
+        <span class="pixel-portrait"></span>
+    </span>
+</div>
 
 ## Wanderlust and Cultural Immersion
 
